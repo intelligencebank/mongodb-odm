@@ -775,7 +775,7 @@ class DocumentPersister
         $hints = $collection->getHints();
         $mapping = $collection->getMapping();
         $cursor = $this->dm->getRepository($mapping['targetDocument'])
-            ->$mapping['repositoryMethod']($collection->getOwner());
+            ->{$mapping['repositoryMethod']}($collection->getOwner());
 
         if (isset($mapping['sort'])) {
             $cursor->sort($mapping['sort']);
