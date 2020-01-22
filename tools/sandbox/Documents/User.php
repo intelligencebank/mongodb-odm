@@ -11,10 +11,10 @@ class User
     /** @ODM\Id */
     protected $id;
 
-    /** @ODM\String */
+    /** @ODM\MongoString */
     private $username;
 
-    /** @ODM\String */
+    /** @ODM\MongoString */
     protected $password;
 
     /** @ODM\EmbedOne(targetDocument="Address") */

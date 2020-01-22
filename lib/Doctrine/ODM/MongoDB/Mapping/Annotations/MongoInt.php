@@ -20,7 +20,7 @@
 namespace Doctrine\ODM\MongoDB\Mapping\Annotations;
 
 /** @Annotation */
-final class String extends AbstractField
+final class MongoInt extends AbstractField
 {
-    public $type = 'string';
+    public $type = 'int';
 }

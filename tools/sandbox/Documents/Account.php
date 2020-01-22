@@ -10,7 +10,7 @@ class Account
     /** @ODM\Id */
     protected $id;
 
-    /** @ODM\String */
+    /** @ODM\MongoString */
     protected $name;
 
     public function __construct($name)
